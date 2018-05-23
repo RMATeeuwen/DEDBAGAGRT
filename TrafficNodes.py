@@ -2,7 +2,8 @@
 
 import csv
 
-class location:
+#   class to store latitude and longitude values as floats
+class Location:
     def __init__(self, lat, lon):
         self.lat = float(lat)
         self.lon = float(lon)
@@ -10,8 +11,8 @@ class location:
     def __str__(self):
         return '(' + str(self.lat) + ', ' + str(self.lon) + ')'
 
-
-class interval:
+#   class to store a starting date, starting time, end date and end time for specific events
+class Interval:
     def __init__(self, startDate, startTime, endDate, endTime):
         self.startDate = startDate
         self.endDate = endDate
@@ -21,7 +22,7 @@ class interval:
     def __str__(self):
         return '(' + str(self.startDate) + ' ' + str(self.startTime) + ', ' + str(self.endDate) + ' ' + str(self.endTime) + ')'
 
-
+#   class to store all the important attributes associated to a TrafficNode
 class TrafficNode:
     def __init__(self, id, type, interval, location, locName):
         self.id = id
@@ -33,7 +34,7 @@ class TrafficNode:
     def __str__(self):
         return str(self.id)
 
-#
+#   function to extract TrafficNodes from a .csv file and store them in a list
 def loadTrafficNodes(fileName):
     reader = csv.reader(open(fileName))
 
@@ -59,6 +60,6 @@ def loadTrafficNodes(fileName):
             end = row[13].split(' ')
 
             #   Add a TrafficNode to the list of trafficNodes
-            trafficNodes.append(TrafficNode(row[6], row[1], interval(start[0], start[1], end[0], end[1]), location(loc[0], loc[1]), row[41]))
+            trafficNodes.append(TrafficNode(row[6], row[1], Interval(start[0], start[1], end[0], end[1]), Location(loc[0], loc[1]), row[41]))
 
     return trafficNodes
