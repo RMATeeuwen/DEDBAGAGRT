@@ -1,0 +1,10 @@
+id, type, start date, start time, end date, end time, latitude, longitude, location name
+NLRWS_NLSIT002334435, VehicleObstruction, 30-04-2018, 06:45:00, 30-04-2018, 07:09:40, 51.3972, 5.506, A2 Afrit Leenderheide/Randweg N2 N2,A2 Afrit Valkenswaard N396
+RWS03_440766, Accident, 30-04-2018, 06:46:45, 30-04-2018, 09:23:51, 51.3997, 5.5048, A2 Knooppunt (triangle) De Hogt A67,A2 Knooppunt (triangle) Leenderheide A67
+RWS03_440876, VehicleObstruction, 30-04-2018, 09:00:34, 30-04-2018, 09:37:22, 51.4055, 5.4523, A2 Knooppunt (triangle) De Hogt A67,A2 Knooppunt (triangle) Leenderheide A67
+RWS03_441416, VehicleObstruction, 01-05-2018, 00:39:39, 01-05-2018, 01:55:00, 51.343, 5.5557, A2 Afrit Valkenswaard N396,A2 Afrit Leende
+RWS02_0000019097, VehicleObstruction, 02-05-2018, 18:56:27, 02-05-2018, 18:56:33, 51.3178, 5.6003, A2 Afrit Leende
+RWS03_442559, VehicleObstruction, 02-05-2018, 18:55:57, 02-05-2018, 19:56:18, 51.3189, 5.5989, A2 Afrit Leende,A2 Afrit Maarheeze
+RWS02_0000019172, VehicleObstruction, 04-05-2018, 08:27:23, 04-05-2018, 08:27:29, 51.3928, 5.5078, A2 Afrit Leenderheide/Randweg N2 N2
+RWS03_443748, VehicleObstruction, 04-05-2018, 17:07:45, 04-05-2018, 18:23:49, 51.4055, 5.448, A2 Knooppunt (triangle) De Hogt A67,A2 Knooppunt (triangle) Leenderheide A67
+RWS03_444649, VehicleObstruction, 06-05-2018, 14:04:00, 06-05-2018, 15:19:14, 50.9681, 5.7878, A2 Verbindingsweg A2 vanuit Maastricht A67 richting Venlo,A2 Verbindingsweg A2 vanuit Maastricht A76 richting Brussel
