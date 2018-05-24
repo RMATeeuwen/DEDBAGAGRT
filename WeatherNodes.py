@@ -1,6 +1,7 @@
 #   Code for loading a weather data CSV into designated data-structure
 
 import csv
+import os.path
 from Interval import *
 
 
@@ -49,3 +50,15 @@ def loadWeatherNodes(fileName):
         id += 1
 
     return (weatherNodes)
+
+def saveWeatherNodes(nodes):
+    header = ['id', 'station id', 'start date', 'start time', 'end date', 'end time', 'wind velocity', 'max velocity',
+              'precipitation in 0.1 ml', 'horizontal sight', 'fog', 'rain', 'snow', 'thunder', 'ice']
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\weatherNodes.csv', 'w')
+
+    file.write(', '.join(header))
+
+    for node in nodes:
+        file.write('\n' + str(node))
+
+    file.close()
