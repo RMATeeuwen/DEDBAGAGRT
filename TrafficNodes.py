@@ -2,33 +2,8 @@
 
 import csv
 import os.path
-
-
-#   class to store latitude and longitude values as floats
-class Location:
-    def __init__(self, lat, lon):
-        self.lat = float(lat)
-        self.lon = float(lon)
-
-    def __str__(self):
-        return '(' + str(self.lat) + ', ' + str(self.lon) + ')'
-
-    def __eq__(self, other):
-        return self.lat == other.lat and self.lon == other.lon
-
-
-#   class to store a starting date, starting time, end date and end time for specific events
-#   if needed an integer representation of date and time can be added for easy comparison
-class Interval:
-    def __init__(self, startDate, startTime, endDate, endTime):
-        self.startDate = startDate
-        self.endDate = endDate
-        self.startTime = startTime
-        self.endTime = endTime
-
-    def __str__(self):
-        return '(' + str(self.startDate) + ' ' + str(self.startTime) + ', ' + str(self.endDate) + ' ' + str(
-            self.endTime) + ')'
+import Location
+import Interval
 
 
 #   class to store all the important attributes associated to a TrafficNode
