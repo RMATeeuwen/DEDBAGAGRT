@@ -1,7 +1,40 @@
 #   class to store a starting date, starting time, end date and end time for specific events
-#   if needed an integer representation of date and time can be added for easy comparison
+#   for easy comparison the 'start' and 'end' attributes give an integer presentation of the
+#   start and end datetimes respectively
+
 class Interval:
     def __init__(self, startDate, startTime, endDate, endTime):
+
+        if startDate == '':
+            splitDate = ['0000', '00', '00']
+        else:
+            #   separate year, month and day
+            splitDate = startDate.split('-')
+
+        if startTime == '':
+            splitTime = ['00', '00', '00']
+        else:
+            #   separate hours, minutes and seconds
+            splitTime = startTime.split(':')
+
+        #   create an integer with the following format: yyyymmddHHMMSS
+        self.start = int(splitDate[2] + splitDate[1] + splitDate[0] + splitTime[0] + splitTime[1] + splitTime[2])
+
+        #   repeat above process for 'end' variable
+        if endDate == '':
+            splitDate = ['0000', '00', '00']
+        else:
+            #   separate year, month and day
+            splitDate = endDate.split('-')
+
+        if endTime == '':
+            splitTime = ['00', '00', '00']
+        else:
+            #   separate hours, minutes and seconds
+            splitTime = endTime.split(':')
+
+        self.end = int(splitDate[2] + splitDate[1] + splitDate[0] + splitTime[0] + splitTime[1] + splitTime[2])
+
         self.startDate = startDate
         self.endDate = endDate
         self.startTime = startTime

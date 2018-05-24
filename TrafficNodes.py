@@ -5,7 +5,6 @@ import os.path
 from Location import *
 from Interval import *
 
-
 #   class to store all the important attributes associated to a TrafficNode
 class TrafficNode:
     def __init__(self, id, type, interval, location, locName):
@@ -25,7 +24,6 @@ class TrafficNode:
 #   function to extract TrafficNodes from a .csv file and store them in a list
 def loadTrafficNodes(fileName):
     reader = csv.reader(open(fileName))
-    count = 0;
 
     trafficNodes = []
 
@@ -42,7 +40,6 @@ def loadTrafficNodes(fileName):
             #   Insert above values into TrafficNode Object
 
             #   Split the latitude and longitude into two separate variables
-
             if '|' in row[40]:
                 loc = row[40].split('|')[0].split(' ')
             else:
@@ -56,8 +53,6 @@ def loadTrafficNodes(fileName):
             trafficNodes.append(
                 TrafficNode(row[6], row[1], Interval(start[0], start[1], end[0], end[1]), Location(loc[0], loc[1]),
                             row[41]))
-
-    print(trafficNodes.__len__())
 
     return trafficNodes
 
