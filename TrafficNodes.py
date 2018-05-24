@@ -2,8 +2,8 @@
 
 import csv
 import os.path
-import Location
-import Interval
+from Location import *
+from Interval import *
 
 
 #   class to store all the important attributes associated to a TrafficNode
@@ -25,12 +25,13 @@ class TrafficNode:
 #   function to extract TrafficNodes from a .csv file and store them in a list
 def loadTrafficNodes(fileName):
     reader = csv.reader(open(fileName))
+    count = 0;
 
     trafficNodes = []
 
     for row in reader:
-        if (row[0] == "ongeval" or row[0] == 'blokkade') and row[14] == "TRUE":
-            #   Important indexes:
+        if (row[0] == "ongeval" or row[0] == 'blokkade') and row[14] == "TRUE" and row[40] != '':
+            # Important indexes:
             #   situationRecordType         1
             #   situationId                 6
             #   validityOverallStartTime    11
@@ -41,7 +42,11 @@ def loadTrafficNodes(fileName):
             #   Insert above values into TrafficNode Object
 
             #   Split the latitude and longitude into two separate variables
-            loc = row[40].split(',')[0].split(' ')
+
+            if '|' in row[40]:
+                loc = row[40].split('|')[0].split(' ')
+            else:
+                loc = row[40].split(' ')
 
             #   Split date and time into two separate variables
             start = row[11].split(' ')
@@ -51,6 +56,8 @@ def loadTrafficNodes(fileName):
             trafficNodes.append(
                 TrafficNode(row[6], row[1], Interval(start[0], start[1], end[0], end[1]), Location(loc[0], loc[1]),
                             row[41]))
+
+    print(trafficNodes.__len__())
 
     return trafficNodes
 
