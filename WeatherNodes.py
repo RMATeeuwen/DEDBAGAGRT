@@ -43,7 +43,7 @@ def loadWeatherNodes(fileName):
                 row[i] = -1
 
         weatherNodes.append(
-            WeatherNode(id, row[0], Interval('', '', '', ''), row[3], row[5], row[6], row[7], row[8], row[9], row[10],
+            WeatherNode(id, row[0], Interval.hourly(row[1], row[2]), row[3], row[5], row[6], row[7], row[8], row[9], row[10],
                         row[11],
                         row[12]))
 

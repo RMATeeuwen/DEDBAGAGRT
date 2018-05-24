@@ -2,6 +2,9 @@
 #   for easy comparison the 'start' and 'end' attributes give an integer presentation of the
 #   start and end datetimes respectively
 
+import datetime
+
+
 class Interval:
     def __init__(self, startDate, startTime, endDate, endTime):
 
@@ -39,6 +42,20 @@ class Interval:
         self.endDate = endDate
         self.startTime = startTime
         self.endTime = endTime
+
+    @classmethod
+    def hourly(cls, date, hour):
+        startDateTime = datetime.datetime(int(date[:4]), int(date[4:6]), int(date[-2:]), int(hour) - 1, 0, 0)
+
+        startDate = startDateTime.strftime("%y-%m-%d")
+        startTime = startDateTime.strftime("%H:%M:%S")
+
+        startDateTime += datetime.timedelta(hours=1)
+
+        endDate = startDateTime.strftime("%y-%m-%d")
+        endTime = startDateTime.strftime("%H:%M:%S")
+
+        return cls(startDate, startTime, endDate, endTime)
 
     def __str__(self):
         return '(' + str(self.startDate) + ' ' + str(self.startTime) + ', ' + str(self.endDate) + ' ' + str(
