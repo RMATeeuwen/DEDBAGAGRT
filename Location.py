@@ -6,7 +6,7 @@ class Location:
         self.lon = float(lon)
 
     def __str__(self):
-        return '(' + str(self.lat) + ', ' + str(self.lon) + ')'
+        return str(self.lat) + ', ' + str(self.lon)
 
     def __eq__(self, other):
         return self.lat == other.lat and self.lon == other.lon

@@ -6,7 +6,7 @@ import datetime
 
 
 class Interval:
-    def __init__(self, startDate, startTime, endDate, endTime):
+    def __init__(self, startDate: str, startTime: str, endDate: str, endTime: str):
 
         if startDate == '':
             splitDate = ['0000', '00', '00']
@@ -44,7 +44,7 @@ class Interval:
         self.endTime = endTime
 
     @classmethod
-    def hourly(cls, date, hour):
+    def hourly(cls, date: str, hour: str):
         startDateTime = datetime.datetime(int(date[:4]), int(date[4:6]), int(date[-2:]), int(hour) - 1, 0, 0)
 
         startDate = startDateTime.strftime("%y-%m-%d")
