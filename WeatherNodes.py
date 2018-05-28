@@ -67,7 +67,7 @@ def loadWeatherNodes(fileName):
 def saveWeatherNodes(nodes):
     header = ['id', 'station id', 'start date', 'start time', 'end date', 'end time', 'wind velocity', 'max velocity',
               'precipitation in 0.1 ml', 'horizontal sight', 'fog', 'rain', 'snow', 'thunder', 'ice']
-    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\weatherNodes.csv', 'w')
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\weatherNodes.csv', 'w')
 
     file.write(', '.join(header))
 

@@ -78,7 +78,7 @@ def saveTrafficNodes(nodes):
               'location name']
     #   open (or create) the file to save the nodes to
     #   the file is located in the script directory
-    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\trafficNodes.csv', 'w')
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\trafficNodes.csv', 'w')
 
     #   write the elements of the header list to file
     #   separated by ', '

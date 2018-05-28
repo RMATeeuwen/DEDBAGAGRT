@@ -43,7 +43,7 @@ def loadStationNodes(fileName: str) -> list:
 #   for a further explanation see the saveTrafficNodes function
 def saveStationNodes(nodes: list):
     header = ['id', 'name', 'latitude', 'longitude']
-    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\stationNodes.csv', 'w')
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\stationNodes.csv', 'w')
 
     file.write(', '.join(header))
 
