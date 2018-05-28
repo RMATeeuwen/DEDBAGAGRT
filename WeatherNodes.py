@@ -32,11 +32,11 @@ class WeatherNode:
             self.thunder) + ', ' + str(self.ice)
 
     def format(self) -> str:
-        return 'id, ' + str(self.id) + ', stationId, ' + str(self.stationId) + ', ' + str(
-            self.interval) + ', windVelocity' + str(self.windVelocity) + ', maxVelocity' + str(
-            self.maxVelocity) + ', precipitation, ' + str(self.precipitation) + ', sight, ' + str(
-            self.sight) + ', fog, ' + str(self.fog) + ', rain, ' + str(self.rain) + ', snow, ' + str(
-            self.snow) + ', thunder, ' + str(self.thunder) + ', ice, ' + str(self.ice)
+        return 'id, ' + str(self.id) + ', stationId, ' + str(
+            self.stationId) + ', ' + self.interval.format() + ', windVelocity, ' + str(
+            self.windVelocity) + ', maxVelocity, ' + str(self.maxVelocity) + ', precipitation, ' + str(
+            self.precipitation) + ', sight, ' + str(self.sight) + ', fog, ' + str(self.fog) + ', rain, ' + str(
+            self.rain) + ', snow, ' + str(self.snow) + ', thunder, ' + str(self.thunder) + ', ice, ' + str(self.ice)
 
 
 #   function to load WeatherNodes from the KNMI dataset

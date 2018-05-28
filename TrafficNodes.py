@@ -35,8 +35,9 @@ class TrafficNode:
             self.location()) + ', ' + str(self.locName)
 
     def format(self) -> str:
-        return 'id, ' + str(self.id) + ', type, ' + str(self.type) + ', ' + str(self.interval()) + ', ' + str(
-            self.location()) + ', location, ' + str(self.locName)
+        return 'id, ' + str(self.id) + ', type, ' + str(
+            self.type) + ', ' + self.interval.format() + ', ' + self.location.format() + ', location, ' + str(
+            self.locName)
 
 
 #   function to extract TrafficNodes from a .csv file and store them in a list

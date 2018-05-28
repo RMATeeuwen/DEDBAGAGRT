@@ -2,18 +2,21 @@ import os.path
 import TrafficNodes as tNodes
 import WeatherNodes as wNodes
 import StationNodes as sNodes
+import FormatSave as fSave
 
 if __name__ == '__main__':
     trafficNodes = tNodes.loadTrafficNodes(
         os.path.dirname(os.path.abspath(__file__)) + '\\input\\Blokkades2017_situatieberichten.csv')
 
-    #weatherNodes = wNodes.loadWeatherNodes(
-    #    os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_hourly_stripped.txt')
+    weatherNodes = wNodes.loadWeatherNodes(
+        os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_hourly_stripped.txt')
 
-    # stationNodes = sNodes.loadStationNodes(os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_stations.txt')
+    stationNodes = sNodes.loadStationNodes(os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_stations.txt')
 
-    tNodes.saveTrafficNodes(trafficNodes)
-    #wNodes.saveWeatherNodes(weatherNodes)
-    #sNodes.saveStationNodes(stationNodes)
+    fSave.formatSave([stationNodes, trafficNodes, weatherNodes])
+
+    # tNodes.saveTrafficNodes(trafficNodes)
+    # wNodes.saveWeatherNodes(weatherNodes)
+    # sNodes.saveStationNodes(stationNodes)
 
     print("Done")
