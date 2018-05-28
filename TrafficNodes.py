@@ -14,6 +14,21 @@ class TrafficNode:
         self.location = location
         self.locName = locName
 
+    def lon(self):
+        return self.location.longitude()
+
+    def lat(self):
+        return self.location.latitude()
+
+    def interval(self):
+        return self.interval
+
+    def location(self):
+        return self.location
+
+    def ID(self):
+        return self.ID
+
     def __str__(self):
         return str(self.id) + ', ' + str(self.type) + ', ' + str(self.interval.startDate) + ', ' + \
                str(self.interval.startTime) + ', ' + str(self.interval.endDate) + ', ' + \
@@ -56,14 +71,20 @@ def loadTrafficNodes(fileName):
 
     return trafficNodes
 
-
+#   function to save a list of TrafficNodes to .csv
 def saveTrafficNodes(nodes):
+    #   list all header names
     header = ['id', 'type', 'start date', 'start time', 'end date', 'end time', 'latitude', 'longitude',
               'location name']
+    #   open (or create) the file to save the nodes to
+    #   the file is located in the script directory
     file = open(os.path.dirname(os.path.abspath(__file__)) + '\\trafficNodes.csv', 'w')
 
+    #   write the elements of the header list to file
+    #   separated by ', '
     file.write(', '.join(header))
 
+    #   write the attributes of each node to a different row
     for node in nodes:
         file.write('\n' + str(node))
 

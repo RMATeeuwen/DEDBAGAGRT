@@ -5,6 +5,12 @@ class Location:
         self.lat = float(lat)
         self.lon = float(lon)
 
+    def latitude(self):
+        return self.lat
+
+    def longitude(self):
+        return self.lon
+
     def __str__(self):
         return str(self.lat) + ', ' + str(self.lon)
 
