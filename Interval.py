@@ -71,6 +71,9 @@ class Interval:
     def __str__(self):
         return str(self.startDate) + ', ' + str(self.startTime) + ', ' + str(self.endDate) + ', ' + str(self.endTime)
 
+    def format(self) -> str:
+        return 'startDate' + str(self.startDate) + ', startTime, ' + str(self.startTime) + ', endDate, ' + str(self.endDate) + ', endTime, ' + str(self.endTime)
+
     def overlap(self, other):
         return (self.start <= other.start < self.end) or (other.start <= self.start < other.end)
 

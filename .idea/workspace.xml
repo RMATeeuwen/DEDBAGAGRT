@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdcaaa00-80b8-42b8-a751-9d02dc968cbd" name="Default" comment="" />
+    <list default="true" id="cdcaaa00-80b8-42b8-a751-9d02dc968cbd" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/Interval.py" beforeDir="false" afterPath="$PROJECT_DIR$/Interval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Location.py" beforeDir="false" afterPath="$PROJECT_DIR$/Location.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StationNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/StationNodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrafficNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrafficNodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherNodes.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,13 +20,13 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+            <state relative-caret-position="153">
+              <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edges.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Edges.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Edges.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -32,8 +38,17 @@
       <file leaf-file-name="Location.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Location.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="14" column="77" lean-forward="true" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interval.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Interval.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="74" column="139" selection-start-line="74" selection-start-column="139" selection-end-line="74" selection-end-column="139" />
             </state>
           </provider>
         </entry>
@@ -41,8 +56,8 @@
       <file leaf-file-name="StationNodes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StationNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
+            <state relative-caret-position="333">
+              <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -50,19 +65,19 @@
       <file leaf-file-name="TrafficNodes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
+            <state relative-caret-position="265">
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherNodes.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeatherNodes.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="69" column="72" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="72" />
+            <state relative-caret-position="316">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
               <folding>
-                <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
+                <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
               </folding>
             </state>
           </provider>
@@ -94,13 +109,13 @@
         <option value="$PROJECT_DIR$/csv.py" />
         <option value="$PROJECT_DIR$/CSVReadWrite.py" />
         <option value="$PROJECT_DIR$/trafficNodes.csv" />
-        <option value="$PROJECT_DIR$/Interval.py" />
-        <option value="$PROJECT_DIR$/Location.py" />
         <option value="$PROJECT_DIR$/Edges.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Location.py" />
+        <option value="$PROJECT_DIR$/Interval.py" />
         <option value="$PROJECT_DIR$/StationNodes.py" />
         <option value="$PROJECT_DIR$/TrafficNodes.py" />
         <option value="$PROJECT_DIR$/WeatherNodes.py" />
-        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -207,6 +222,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.097580016" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -233,6 +249,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Edges.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -262,14 +285,12 @@
         <state relative-caret-position="748">
           <caret line="46" column="12" selection-start-line="45" selection-start-column="125" selection-end-line="47" selection-end-column="33" />
           <folding>
-            <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
+            <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt" />
     <entry file="file://$PROJECT_DIR$/Interval.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -285,14 +306,12 @@
         <state relative-caret-position="782">
           <caret line="46" column="12" selection-start-line="45" selection-start-column="125" selection-end-line="47" selection-end-column="33" />
           <folding>
-            <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
+            <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt" />
     <entry file="file://$PROJECT_DIR$/Interval.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -304,14 +323,12 @@
         <state relative-caret-position="333">
           <caret line="66" column="12" selection-start-line="66" selection-start-column="12" selection-end-line="70" selection-end-column="33" />
           <folding>
-            <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
+            <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/KNMI_hourly_stripped.txt" />
     <entry file="file://$PROJECT_DIR$/Interval.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -329,13 +346,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
     <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -350,16 +361,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00 - Tutorial 1b - Python.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
+    <entry file="file://$PROJECT_DIR$/00 - Tutorial 1b - Python.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -367,16 +370,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weatherNodes.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-49">
-          <caret line="14978" column="80" selection-start-line="14978" selection-start-column="80" selection-end-line="14978" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weatherNodes.csv" />
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
     <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -402,14 +397,12 @@
         <state relative-caret-position="333">
           <caret line="46" column="12" selection-start-line="45" selection-start-column="125" selection-end-line="47" selection-end-column="33" />
           <folding>
-            <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
+            <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stationNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/stationNodes.csv" />
     <entry file="file://$PROJECT_DIR$/StationNodes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -431,13 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
     <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
@@ -452,16 +439,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/00 - Tutorial 1b - Python.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
+    <entry file="file://$PROJECT_DIR$/00 - Tutorial 1b - Python.ipynb" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -469,61 +448,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weatherNodes.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-49">
-          <caret line="14978" column="80" selection-start-line="14978" selection-start-column="80" selection-end-line="14978" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trafficNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stationNodes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Interval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StationNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="45" column="70" selection-start-line="45" selection-start-column="70" selection-end-line="45" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="69" column="72" selection-start-line="69" selection-start-column="72" selection-end-line="69" selection-end-column="72" />
-          <folding>
-            <marker date="1527504168788" expanded="true" signature="141:143" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weatherNodes.csv" />
+    <entry file="file://$PROJECT_DIR$/trafficNodes.csv" />
+    <entry file="file://$PROJECT_DIR$/stationNodes.csv" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="12" column="90" lean-forward="true" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+        <state relative-caret-position="153">
+          <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -531,6 +462,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StationNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="23" column="98" selection-start-line="23" selection-start-column="98" selection-end-line="23" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Interval.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="74" column="139" selection-start-line="74" selection-start-column="139" selection-end-line="74" selection-end-column="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="77" lean-forward="true" selection-start-line="14" selection-start-column="77" selection-end-line="14" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <marker date="1527515354476" expanded="true" signature="141:143" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

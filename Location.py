@@ -11,6 +11,9 @@ class Location:
     def longitude(self):
         return self.lon
 
+    def format(self) -> str:
+        return 'latitude, ' + str(self.lat) + ', longitude, ' + str(self.lon)
+
     def __str__(self):
         return str(self.lat) + ', ' + str(self.lon)
 

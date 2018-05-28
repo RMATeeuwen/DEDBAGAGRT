@@ -5,6 +5,7 @@ import os.path
 from Location import *
 from Interval import *
 
+
 #   class to store all the important attributes associated to a TrafficNode
 class TrafficNode:
     def __init__(self, id, type, interval, location, locName):
@@ -30,10 +31,12 @@ class TrafficNode:
         return self.ID
 
     def __str__(self):
-        return str(self.id) + ', ' + str(self.type) + ', ' + str(self.interval.startDate) + ', ' + \
-               str(self.interval.startTime) + ', ' + str(self.interval.endDate) + ', ' + \
-               str(self.interval.endTime) + ', ' + str(self.location.lat) + ', ' + \
-               str(self.location.lon) + ', ' + str(self.locName)
+        return str(self.id) + ', ' + str(self.type) + ', ' + str(self.interval()) + ', ' + str(
+            self.location()) + ', ' + str(self.locName)
+
+    def format(self) -> str:
+        return 'id, ' + str(self.id) + ', type, ' + str(self.type) + ', ' + str(self.interval()) + ', ' + str(
+            self.location()) + ', location, ' + str(self.locName)
 
 
 #   function to extract TrafficNodes from a .csv file and store them in a list
@@ -70,6 +73,7 @@ def loadTrafficNodes(fileName):
                             row[41]))
 
     return trafficNodes
+
 
 #   function to save a list of TrafficNodes to .csv
 def saveTrafficNodes(nodes):

@@ -31,6 +31,14 @@ class WeatherNode:
             self.sight) + ', ' + str(self.fog) + ', ' + str(self.rain) + ', ' + str(self.snow) + ', ' + str(
             self.thunder) + ', ' + str(self.ice)
 
+    def format(self) -> str:
+        return 'id, ' + str(self.id) + ', stationId, ' + str(self.stationId) + ', ' + str(
+            self.interval) + ', windVelocity' + str(self.windVelocity) + ', maxVelocity' + str(
+            self.maxVelocity) + ', precipitation, ' + str(self.precipitation) + ', sight, ' + str(
+            self.sight) + ', fog, ' + str(self.fog) + ', rain, ' + str(self.rain) + ', snow, ' + str(
+            self.snow) + ', thunder, ' + str(self.thunder) + ', ice, ' + str(self.ice)
+
+
 #   function to load WeatherNodes from the KNMI dataset
 def loadWeatherNodes(fileName):
     reader = csv.reader(open(fileName))
@@ -53,7 +61,8 @@ def loadWeatherNodes(fileName):
         #   add the node to the list of WeatherNodes
         #   for an explanation of the hourly function see Interval.py
         weatherNodes.append(
-            WeatherNode(id, row[0], Interval.hourly(row[1], row[2]), row[3], row[5], row[6], row[7], row[8], row[9], row[10],
+            WeatherNode(id, row[0], Interval.hourly(row[1], row[2]), row[3], row[5], row[6], row[7], row[8], row[9],
+                        row[10],
                         row[11],
                         row[12]))
 
@@ -61,6 +70,7 @@ def loadWeatherNodes(fileName):
         id += 1
 
     return (weatherNodes)
+
 
 #   function to save a list of WeatherNode objects to csv
 #   for a further explanation see the saveTrafficNodes function

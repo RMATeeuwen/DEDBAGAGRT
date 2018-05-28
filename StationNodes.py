@@ -20,6 +20,9 @@ class StationNode:
     def __str__(self):
         return str(self.id) + ', ' + str(self.name) + ', ' + str(self.location)
 
+    def format(self) -> str:
+        return 'id, ' + str(self.id) + ', name, ' + str(self.name) + ', ' + self.location.format()
+
 #   function to load StationNodes from a KNMI dataset
 #   it has similar structure to the load functions
 #   of the other node types
