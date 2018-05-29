@@ -83,11 +83,10 @@ def create_edges(TrafficNodesList, WeatherNodesList, stationNodesList):
                     ChainIncidentEdge(ID, traffic.ID(), othertraffic.ID(), traffic.location, othertraffic.location,
                                       outer_interval(traffic, othertraffic)))
                 ID += 1
+        closest = -1
         for station in stationNodesList:
-            closest = -1
-            if closest == -1 or distance(traffic, station) < closest:
+            if closest == -1 or distance(traffic, station) < distance(traffic, closest):
                 closest = station
-                break
         stationIncidentEdgesList.append(
             StationIncidentEdge(ID, closest.ID(), traffic.ID(), traffic.location, traffic.interval))
         ID += 1
