@@ -25,6 +25,12 @@ class WeatherNode:
     def interval(self):
         return self.interval
 
+    def stationID(self):
+        return self.stationId
+
+    def ID(self):
+        return self.id
+
     def __str__(self):
         return str(self.id) + ', ' + str(self.stationId) + ', ' + str(self.interval) + ', ' + str(
             self.windVelocity) + ', ' + str(self.maxVelocity) + ', ' + str(self.precipitation) + ', ' + str(

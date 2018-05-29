@@ -9,7 +9,7 @@ class StationNode:
         self.location = location
 
     def ID(self):
-        return self.ID
+        return self.id
 
     def lon(self):
         return self.location.longitude()

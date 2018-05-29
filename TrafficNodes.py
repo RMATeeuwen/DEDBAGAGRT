@@ -28,7 +28,7 @@ class TrafficNode:
         return self.location
 
     def ID(self):
-        return self.ID
+        return self.id
 
     def __str__(self):
         return str(self.id) + ', ' + str(self.type) + ', ' + str(self.interval()) + ', ' + str(

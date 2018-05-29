@@ -2,6 +2,7 @@ import os.path
 import TrafficNodes as tNodes
 import WeatherNodes as wNodes
 import StationNodes as sNodes
+import Edges as edge
 import FormatSave as fSave
 
 if __name__ == '__main__':
@@ -13,7 +14,10 @@ if __name__ == '__main__':
 
     stationNodes = sNodes.loadStationNodes(os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_stations.txt')
 
-    fSave.formatSave([stationNodes, trafficNodes, weatherNodes])
+    edges = edge.create_edges(trafficNodes, weatherNodes, stationNodes)
+
+    fSave.formatSave([stationNodes, trafficNodes, weatherNodes], 'nodes')
+    fSave.formatSave(edges, 'edges')
 
     # tNodes.saveTrafficNodes(trafficNodes)
     # wNodes.saveWeatherNodes(weatherNodes)
