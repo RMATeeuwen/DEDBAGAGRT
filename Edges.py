@@ -90,13 +90,10 @@ def create_edges(TrafficNodesList, WeatherNodesList, stationNodesList):
         stationIncidentEdgesList.append(
             StationIncidentEdge(ID, closest.ID(), traffic.ID(), traffic.location, traffic.interval))
         ID += 1
-        print('begin')
         for weather in WeatherNodesList:
             if weather.stationID() == closest.ID() and time_overlap(traffic, weather):
-                print("super'vo")
                 weatherIncidentEdgesList.append(WeatherIncidentEdge(ID, weather.ID(), traffic.ID(), traffic.location,
                                                                     weather.interval))
                 ID += 1
                 break
-    print('done with making edges')
     return [stationIncidentEdgesList, chainIncidentEdgesList, weatherIncidentEdgesList]

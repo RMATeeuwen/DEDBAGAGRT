@@ -55,14 +55,14 @@ class Interval:
         #   the function strftime simply formats the information in the
         #   datetime object to a specific layout in this case e.g.
         #   yyyy-mm-dd for a date and HH:MM:SS for time
-        startDate = startDateTime.strftime("%y-%m-%d")
+        startDate = startDateTime.strftime("%d-%m-%Y")
         startTime = startDateTime.strftime("%H:%M:%S")
 
         #   datetime object to a specific layout in this case e.g.
         #   yyyy-mm-dd for a date and HH:MM:SS for time
         startDateTime += datetime.timedelta(hours=1)
 
-        endDate = startDateTime.strftime("%y-%m-%d")
+        endDate = startDateTime.strftime("%d-%m-%Y")
         endTime = startDateTime.strftime("%H:%M:%S")
 
         #   pass the created variables to the constructor
@@ -76,14 +76,7 @@ class Interval:
             self.endDate) + ', endTime, ' + str(self.endTime)
 
     def overlap(self, other):
-        if other.start <= self.start < other.end:
-            print("'vo")
         return other.start <= self.start < other.end
-
-    def start(self):
-        return self.start
-
-    
 
     def outer_interval(self, other):
         minstart = min(self.start, other.start)

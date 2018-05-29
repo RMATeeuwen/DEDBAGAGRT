@@ -1,5 +1,6 @@
 #   class to store latitude and longitude values as floats
 
+
 class Location:
     def __init__(self, lat, lon):
         self.lat = float(lat)
