@@ -70,7 +70,7 @@ def loadTrafficNodes(fileName):
 
             #   Add a TrafficNode to the list of trafficNodes
             trafficNodes.append(
-                TrafficNode(row[6], row[1], Interval(start[0], start[1], end[0], end[1]), Location(loc[0], loc[1]),
+                TrafficNode(row[6], row[1], Interval(start[0], start[1], end[0], end[1]), Location(loc[1], loc[0]),
                             row[41]))
 
     return trafficNodes

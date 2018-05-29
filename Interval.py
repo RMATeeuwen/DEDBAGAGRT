@@ -80,6 +80,11 @@ class Interval:
             print("'vo")
         return other.start <= self.start < other.end
 
+    def start(self):
+        return self.start
+
+    
+
     def outer_interval(self, other):
         minstart = min(self.start, other.start)
         maxend = max(self.end, other.end)
