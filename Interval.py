@@ -76,7 +76,9 @@ class Interval:
             self.endDate) + ', endTime, ' + str(self.endTime)
 
     def overlap(self, other):
-        return (self.start <= other.start < self.end) or (other.start <= self.start < other.end)
+        if other.start <= self.start < other.end:
+            print("'vo")
+        return other.start <= self.start < other.end
 
     def outer_interval(self, other):
         minstart = min(self.start, other.start)

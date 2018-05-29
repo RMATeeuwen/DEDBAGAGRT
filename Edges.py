@@ -4,8 +4,8 @@ MAXDISTANCE = 5  # choose parameter
 
 
 class WeatherIncidentEdge:
-    def __init__(self, weatherID, trafficID, location, interval):
-        self.edgeID = str(weatherID) + str(trafficID)
+    def __init__(self, ID, weatherID, trafficID, location, interval):
+        self.edgeID = ID
         self.weatherID = weatherID
         self.trafficID = trafficID
         self.location = location
@@ -18,8 +18,8 @@ class WeatherIncidentEdge:
 
 
 class ChainIncidentEdge:
-    def __init__(self, trafficID, othertrafficID, location, otherlocation, interval):
-        self.edgeID = str(trafficID) + str(othertrafficID)
+    def __init__(self, ID, trafficID, othertrafficID, location, otherlocation, interval):
+        self.edgeID = ID
         self.trafficID = trafficID
         self.othertrafficID = othertrafficID
         self.location = location
@@ -33,8 +33,8 @@ class ChainIncidentEdge:
 
 
 class StationIncidentEdge:
-    def __init__(self, stationID, trafficID, location, interval):
-        self.edgeID = str(stationID) + str(trafficID)
+    def __init__(self, ID, stationID, trafficID, location, interval):
+        self.edgeID = ID
         self.stationID = stationID
         self.trafficID = trafficID
         self.location = location
@@ -75,20 +75,29 @@ def create_edges(TrafficNodesList, WeatherNodesList, stationNodesList):
     stationIncidentEdgesList = []
     chainIncidentEdgesList = []
     weatherIncidentEdgesList = []
+    ID = 0
     for traffic in TrafficNodesList:
         for othertraffic in TrafficNodesList:
             if distance(traffic, othertraffic) < MAXDISTANCE and time_overlap(traffic, othertraffic):
                 chainIncidentEdgesList.append(
-                    ChainIncidentEdge(traffic.ID(), othertraffic.ID(), traffic.location, othertraffic.location,
+                    ChainIncidentEdge(ID, traffic.ID(), othertraffic.ID(), traffic.location, othertraffic.location,
                                       outer_interval(traffic, othertraffic)))
+                ID += 1
         for station in stationNodesList:
             closest = -1
             if closest == -1 or distance(traffic, station) < closest:
                 closest = station
+                break
         stationIncidentEdgesList.append(
-            StationIncidentEdge(closest.ID(), traffic.ID(), traffic.location, traffic.interval))
+            StationIncidentEdge(ID, closest.ID(), traffic.ID(), traffic.location, traffic.interval))
+        ID += 1
+        print('begin')
         for weather in WeatherNodesList:
             if weather.stationID() == closest.ID() and time_overlap(traffic, weather):
-                    weatherIncidentEdgesList.append(WeatherIncidentEdge(weather.ID(), traffic.ID(), traffic.location,
+                print("super'vo")
+                weatherIncidentEdgesList.append(WeatherIncidentEdge(ID, weather.ID(), traffic.ID(), traffic.location,
                                                                     weather.interval))
+                ID += 1
+                break
+    print('done with making edges')
     return [stationIncidentEdgesList, chainIncidentEdgesList, weatherIncidentEdgesList]
