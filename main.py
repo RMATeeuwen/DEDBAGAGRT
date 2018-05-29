@@ -15,9 +15,9 @@ if __name__ == '__main__':
     stationNodes = sNodes.loadStationNodes(os.path.dirname(os.path.abspath(__file__)) + '\\input\\KNMI_stations.txt')
 
     edges = edge.create_edges(trafficNodes, weatherNodes, stationNodes)
-    print('number of stationIncidentEdges' + str(len(edges[0])))
-    print('number of chainIncidentEdges' + str(len(edges[1])))
-    print('number of weatherIncidentEdges' + str(len(edges[2])))
+    print('number of stationIncidentEdges: ' + str(len(edges[0])))
+    print('number of chainIncidentEdges: ' + str(len(edges[1])))
+    print('number of weatherIncidentEdges: ' + str(len(edges[2])))
 
     fSave.formatSave([stationNodes, trafficNodes, weatherNodes], 'nodes')
     fSave.formatSave(edges, 'edges')
