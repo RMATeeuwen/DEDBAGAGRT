@@ -44,9 +44,9 @@ def loadStationNodes(fileName: str) -> list:
 
 #   function to save a list of WeatherNode objects to csv
 #   for a further explanation see the saveTrafficNodes function
-def saveStationNodes(nodes: list):
+def saveStationNodes(nodes: list, fileName: str):
     header = ['id', 'name', 'latitude', 'longitude']
-    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\stationNodes.csv', 'w')
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\' + fileName, 'w')
 
     file.write(', '.join(header))
 

@@ -4,7 +4,11 @@
     <list default="true" id="cdcaaa00-80b8-42b8-a751-9d02dc968cbd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Edges.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edges.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/Blokkades2017_situatieberichten.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input/Blokkades2017_situatieberichten.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StationNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/StationNodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrafficNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrafficNodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherNodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherNodes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/KNMI_hourly_stripped.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/KNMI_stations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/KNMI_stations.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/edges.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/edges.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/output/nodes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/nodes.csv" afterDir="false" />
@@ -30,7 +34,7 @@
       <file leaf-file-name="Interval.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Interval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
+            <state relative-caret-position="1088">
               <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
             </state>
           </provider>
@@ -45,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="72">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -57,11 +61,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="StationNodes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StationNodes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="48" column="84" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TrafficNodes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+            <state relative-caret-position="146">
+              <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -69,21 +82,17 @@
       <file leaf-file-name="WeatherNodes.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+            <state relative-caret-position="95">
+              <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edges.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Edges.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Edges.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
-              <folding>
-                <element signature="e#1785#2142#0" />
-                <element signature="e#2267#2319#0" />
-              </folding>
+            <state relative-caret-position="-442">
+              <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -114,27 +123,26 @@
         <option value="$PROJECT_DIR$/CSVReadWrite.py" />
         <option value="$PROJECT_DIR$/trafficNodes.csv" />
         <option value="$PROJECT_DIR$/FormatSave.py" />
-        <option value="$PROJECT_DIR$/StationNodes.py" />
-        <option value="$PROJECT_DIR$/WeatherNodes.py" />
-        <option value="$PROJECT_DIR$/TrafficNodes.py" />
         <option value="$PROJECT_DIR$/Location.py" />
         <option value="$PROJECT_DIR$/Interval.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/StationNodes.py" />
+        <option value="$PROJECT_DIR$/TrafficNodes.py" />
+        <option value="$PROJECT_DIR$/WeatherNodes.py" />
         <option value="$PROJECT_DIR$/Edges.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="35" />
-    <option name="width" value="1090" />
-    <option name="height" value="1025" />
+    <option name="x" value="-15" />
+    <option name="width" value="1628" />
+    <option name="height" value="1715" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +159,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,14 +303,14 @@
     <frame x="-6" y="-6" width="1293" height="693" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2490242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2490242" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30988896" side_tool="true" weight="0.32902467" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69011104" visible="true" weight="0.3282313" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69011104" visible="true" weight="0.3282313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -324,14 +333,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69011104" visible="true" weight="0.32902467" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.30988896" side_tool="true" weight="0.32902467" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -551,31 +560,10 @@
     <entry file="file://$PROJECT_DIR$/output/trafficNodes.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/StationNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output/weatherNodes.csv">
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="9525">
           <caret line="381" column="72" selection-start-line="381" selection-start-column="72" selection-end-line="381" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="85" column="41" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -602,28 +590,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Interval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
+        <state relative-caret-position="1088">
           <caret line="64" column="50" selection-start-line="64" selection-start-column="50" selection-end-line="64" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/StationNodes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="208">
+          <caret line="48" column="84" selection-start-line="48" selection-start-column="84" selection-end-line="48" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WeatherNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edges.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="79" column="17" lean-forward="true" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
+        <state relative-caret-position="-442">
+          <caret line="82" column="18" selection-start-line="82" selection-start-column="18" selection-end-line="82" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrafficNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="79" column="49" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
-            <element signature="e#1785#2142#0" />
-            <element signature="e#2267#2319#0" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

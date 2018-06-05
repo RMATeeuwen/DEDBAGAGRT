@@ -80,6 +80,8 @@ def create_edges(trafficNodesList: list, weatherNodesList: list, stationNodesLis
     closestId = 0
     weatherId = 0
 
+    startIndex = 0
+
     length = trafficNodesList.__len__() - 2
 
     for i in range(0, length):
@@ -106,15 +108,29 @@ def create_edges(trafficNodesList: list, weatherNodesList: list, stationNodesLis
 
         closestId += 1
 
-        for weather in weatherNodesList:
-            if weather.stationID() != closest.ID():
-                continue
+        for i in range(0, stationNodesList.__len__() - 1):
+            if stationNodesList[i] == closest.ID():
+                startIndex = i * 8760;
+
+        for i in range(startIndex, startIndex + 8759):
+            weather = weatherNodesList[i]
 
             if time_overlap(traffic, weather):
                 weatherIncidentEdgesList.append(
                     WeatherIncidentEdge(weatherId, weather.ID(), traffic.ID(), traffic.location, weather.interval))
 
-                weatherId += 1
-
+                weatherId += 1;
                 break
     return [stationIncidentEdgesList, chainIncidentEdgesList, weatherIncidentEdgesList]
+
+# for weather in weatherNodesList:
+#     if weather.stationID() != closest.ID():
+#         continue
+#
+#     if time_overlap(traffic, weather):
+#         weatherIncidentEdgesList.append(
+#             WeatherIncidentEdge(weatherId, weather.ID(), traffic.ID(), traffic.location, weather.interval))
+#
+#         weatherId += 1
+#
+#         break

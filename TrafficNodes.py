@@ -77,13 +77,13 @@ def loadTrafficNodes(fileName):
 
 
 #   function to save a list of TrafficNodes to .csv
-def saveTrafficNodes(nodes):
+def saveTrafficNodes(nodes: list, fileName: str):
     #   list all header names
     header = ['id', 'type', 'start date', 'start time', 'end date', 'end time', 'latitude', 'longitude',
               'location name']
     #   open (or create) the file to save the nodes to
     #   the file is located in the script directory
-    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\trafficNodes.csv', 'w')
+    file = open(os.path.dirname(os.path.abspath(__file__)) + '\\output\\' + fileName, 'w')
 
     #   write the elements of the header list to file
     #   separated by ', '
